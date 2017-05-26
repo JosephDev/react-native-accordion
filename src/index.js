@@ -5,7 +5,7 @@ import tweenState from 'react-tween-state';
 
 import {
   StyleSheet,
-  TouchableOpacity,
+  TouchableHighlight,
   View,
   Text
 } from 'react-native';
@@ -97,14 +97,14 @@ var Accordion = React.createClass({
           overflow: 'hidden'
         }}
       >
-        <TouchableOpacity
+        <TouchableHighlight
           ref="AccordionHeader"
           onPress={this._onPress}
           underlayColor={this.props.underlayColor}
           style={this.props.style}
         >
           {this.props.header}
-        </TouchableOpacity>
+        </TouchableHighlight>
         <View
           ref="AccordionContentWrapper"
           style={{
